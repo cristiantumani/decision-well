@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { ArrowRight, Loader2, Sparkles, CheckCircle2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 
 const EarlyAccess = () => {
   const [firstName, setFirstName] = useState("");
@@ -56,10 +57,33 @@ const EarlyAccess = () => {
 
     setIsLoading(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    const { error } = await supabase
+      .from("early_access_signups")
+      .insert({
+        first_name: firstName.trim(),
+        last_name: lastName.trim(),
+        email: email.trim().toLowerCase(),
+      });
 
     setIsLoading(false);
+
+    if (error) {
+      if (error.code === "23505") {
+        toast({
+          title: "Already signed up",
+          description: "This email is already on our early access list.",
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Something went wrong",
+          description: "Please try again later.",
+          variant: "destructive",
+        });
+      }
+      return;
+    }
+
     setIsSubmitted(true);
 
     toast({
