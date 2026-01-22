@@ -29,8 +29,8 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 bg-secondary/30">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-secondary/30">
+      <div className="container mx-auto px-6 max-w-[1200px]">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Loved by engineering teams
@@ -40,11 +40,11 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card rounded-2xl border border-border p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative group"
+              className="bg-card rounded-2xl border border-border p-10 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative group"
             >
               {/* Quote icon */}
               <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">

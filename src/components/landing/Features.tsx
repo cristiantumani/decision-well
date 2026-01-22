@@ -209,9 +209,9 @@ const FeatureVisual = ({ type }: { type: string }) => {
 
 const Features = () => {
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-6 max-w-[1200px]">
+        <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Everything you need to preserve team knowledge
           </h2>
@@ -220,7 +220,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="space-y-24 max-w-6xl mx-auto">
+        <div className="space-y-20">
           {features.map((feature, index) => (
             <div
               key={index}
