@@ -14,12 +14,12 @@ const BeforeAfter = () => {
   ];
 
   return (
-    <section className="py-24 bg-secondary/30">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    <section className="py-20 bg-secondary/30">
+      <div className="container mx-auto px-6 max-w-[1200px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Before Corteza - Left Column */}
           <div className="relative">
-            <div className="bg-card rounded-2xl border border-border p-8 shadow-sm opacity-80">
+            <div className="bg-card rounded-2xl border border-border p-10 shadow-sm opacity-80">
               {/* Header */}
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-full bg-destructive/10 flex items-center justify-center">
@@ -88,7 +88,7 @@ const BeforeAfter = () => {
 
           {/* After Corteza - Right Column */}
           <div className="relative">
-            <div className="bg-card rounded-2xl border border-accent/30 p-8 shadow-elegant ring-1 ring-accent/10">
+            <div className="bg-card rounded-2xl border border-accent/30 p-10 shadow-elegant ring-1 ring-accent/10">
               {/* Header */}
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
