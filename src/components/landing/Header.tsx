@@ -18,9 +18,6 @@ const Header = () => {
 
         <div className="hidden md:flex items-center gap-8">
           <a href="#problem" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Why
-          </a>
-          <a href="#problem" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Solution
           </a>
           <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -55,9 +52,6 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-background border-b border-border">
           <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
-            <a href="#problem" className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2">
-              Why
-            </a>
             <a href="#problem" className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2">
               Solution
             </a>
