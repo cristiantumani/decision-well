@@ -26,6 +26,9 @@ const Header = () => {
           <a href="#integrations" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Integrations
           </a>
+          <Link to="/docs" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Setup Guide
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
@@ -61,6 +64,9 @@ const Header = () => {
             <a href="#integrations" className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2">
               Integrations
             </a>
+            <Link to="/docs" className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2">
+              Setup Guide
+            </Link>
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
               <a href="https://app.corteza.app" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="sm">
