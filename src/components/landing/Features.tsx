@@ -2,18 +2,18 @@ import { Check, MessageSquare, Search, Link2 } from "lucide-react";
 
 const features = [
   {
-    title: "Stop re-explaining context",
-    description: "Log decisions in seconds from Slack, the dashboard, or the browser extension. New teammates get the full picture — what was decided, why, and what alternatives were considered — without having to ask.",
-    badge: "2-second capture",
+    title: "Find any decision in seconds — just ask",
+    description: "Type your question in plain English. Corteza understands context and meaning, not just keywords. Get the full decision, the reasoning behind it, who made it, and what alternatives were considered — all in one instant search.",
+    badge: "AI-powered search",
     imagePosition: "left" as const,
-    visual: "slack-decision",
+    visual: "ai-response",
   },
   {
-    title: "Find any decision in seconds",
-    description: "Ask in plain English. Corteza understands context and meaning — not just keywords. Get the decision, the reasoning, and who made it — instantly.",
-    badge: "95% accuracy",
+    title: "Capture decisions wherever they happen",
+    description: "Log from Slack, your browser, or the dashboard in seconds. Organize by Spaces — keep sensitive CEO notes private, or create shared spaces for your product team. New teammates get instant context without asking the same questions.",
+    badge: "Works everywhere",
     imagePosition: "right" as const,
-    visual: "ai-response",
+    visual: "slack-decision",
   },
   {
     title: "See why things were built, not just what",
@@ -213,10 +213,10 @@ const Features = () => {
       <div className="container mx-auto px-6 max-w-[1200px]">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Everything you need to decide with confidence
+            Search your team's memory. Make better decisions.
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stop re-debating. Stop searching. Start moving faster.
+            Stop asking around. Stop re-debating. Just search and move forward.
           </p>
         </div>
 

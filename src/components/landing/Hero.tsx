@@ -24,7 +24,7 @@ const Hero = () => {
 
             {/* Subheadline */}
             <p className="text-xl text-muted-foreground mb-10 animate-fade-in-up delay-100 leading-relaxed">
-              Stop losing hours to context your team already has. Corteza captures decisions anywhere they happen — and surfaces the full reasoning in seconds.
+              Your team already made that decision. Find it in seconds with AI-powered search — get the full context, reasoning, and alternatives without asking around.
             </p>
 
             {/* CTA buttons */}

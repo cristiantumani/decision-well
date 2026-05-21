@@ -4,10 +4,10 @@ const steps = [
   {
     icon: MessageSquare,
     number: "01",
-    title: "Capture in seconds, wherever work happens",
+    title: "Log from anywhere — Slack, browser, or dashboard",
     description:
-      "Log a decision from Slack, the dashboard, or the browser extension — include the why, the alternatives, the context. Zero workflow changes needed.",
-    detail: "No extra tab to open. Works mid-meeting, in async threads, during code reviews — anywhere.",
+      "Capture decisions wherever you are with the Chrome extension, Slack command, or web dashboard. Organize with Spaces for your team, project, or keep notes private.",
+    detail: "Works mid-meeting, in async threads, during code reviews, browsing docs — anywhere. No context switching.",
   },
   {
     icon: Search,
