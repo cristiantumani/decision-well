@@ -3,10 +3,16 @@ import { ArrowRight, Clock, Tag } from "lucide-react";
 import { posts } from "@/data/blog";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+import SEO from "@/components/SEO";
 
 const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Blog — Team memory & decision culture | Corteza"
+        description="Practical articles on how product teams capture knowledge, reduce repeated work, and build institutional memory that lasts."
+        path="/blog"
+      />
       <Header />
 
       <main className="pt-24 pb-20">

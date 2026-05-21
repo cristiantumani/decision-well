@@ -6,6 +6,7 @@ import { ArrowRight, Loader2, Sparkles, CheckCircle2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
+import SEO from "@/components/SEO";
 
 const EarlyAccess = () => {
   const [firstName, setFirstName] = useState("");
@@ -15,6 +16,7 @@ const EarlyAccess = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState<{ firstName?: string; lastName?: string; email?: string }>({});
   const { toast } = useToast();
+
 
   const validateEmail = (email: string) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -145,6 +147,11 @@ const EarlyAccess = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Join Early Access — Corteza"
+        description="Sign up for early access to Corteza, the AI team memory that captures and surfaces your team's decisions."
+        path="/early-access"
+      />
       {/* Header */}
       <header className="py-6 border-b border-border">
         <div className="container mx-auto px-6">

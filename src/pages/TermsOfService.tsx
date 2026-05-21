@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Terms of Service — Corteza"
+        description="The terms governing your use of Corteza."
+        path="/terms"
+      />
       <div className="container mx-auto px-6 py-12 max-w-4xl">
         <Link 
           to="/" 

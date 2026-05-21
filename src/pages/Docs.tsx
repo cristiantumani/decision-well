@@ -33,6 +33,7 @@ import {
   Home,
   Headphones,
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const DocsPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -121,6 +122,11 @@ const DocsPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Setup Guide — Corteza Documentation"
+        description="Step-by-step guide to install Corteza, connect Slack, and start capturing your team's decisions in under two minutes."
+        path="/docs"
+      />
       {/* Lightbox Modal */}
       {lightboxImage && (
         <div 
