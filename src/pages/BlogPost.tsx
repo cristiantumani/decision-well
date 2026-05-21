@@ -4,6 +4,7 @@ import { getPostBySlug, BlogSection } from "@/data/blog";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 
 const renderSection = (section: BlogSection, index: number) => {
   switch (section.type) {
@@ -103,8 +104,31 @@ const BlogPost = () => {
     year: "numeric",
   });
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { "@type": "Person", name: post.author },
+    publisher: {
+      "@type": "Organization",
+      name: "Corteza",
+      logo: { "@type": "ImageObject", url: "https://corteza.app/favicon-96x96.png" },
+    },
+    mainEntityOfPage: `https://corteza.app/blog/${post.slug}`,
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${post.title} | Corteza Blog`.slice(0, 70)}
+        description={post.description}
+        path={`/blog/${post.slug}`}
+        type="article"
+        jsonLd={articleSchema}
+      />
       <Header />
 
       <main className="pt-24 pb-20">
