@@ -147,6 +147,11 @@ const EarlyAccess = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Join Early Access — Corteza"
+        description="Sign up for early access to Corteza, the AI team memory that captures and surfaces your team's decisions."
+        path="/early-access"
+      />
       {/* Header */}
       <header className="py-6 border-b border-border">
         <div className="container mx-auto px-6">

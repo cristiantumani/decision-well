@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Privacy Policy — Corteza"
+        description="How Corteza collects, uses, stores, and protects your information."
+        path="/privacy"
+      />
       <div className="container mx-auto px-6 py-12 max-w-4xl">
         <Link 
           to="/" 
