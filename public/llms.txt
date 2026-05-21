@@ -1,0 +1,23 @@
+# Corteza
+
+> AI-powered team memory for product teams. Capture decisions from Slack, meetings, and docs — then find them in seconds with natural-language search.
+
+Corteza removes the friction of documenting team decisions. Log what was decided and why from anywhere your team already works, then ask questions in plain English to get instant answers with full context.
+
+## Pages
+
+- [Home](/): Product overview, how it works, integrations, and FAQ.
+- [Setup Guide](/docs): Step-by-step instructions to install Corteza, connect Slack, and start logging decisions.
+- [Early Access](/early-access): Join the early access program and get onboarded.
+- [Blog](/blog): Articles on team memory, decision culture, and reducing repeated work.
+
+## Blog
+
+- [Why Your Team Keeps Re-Making the Same Decisions](/blog/why-your-team-keeps-remaking-the-same-decisions): How institutional knowledge disappears and what to do about it.
+- [How to Document Team Decisions Without Slowing Down](/blog/how-to-document-team-decisions-without-slowing-down): A lightweight framework and template for decision logs.
+- [The Hidden Cost of Lost Context When Engineers Join Your Team](/blog/the-hidden-cost-of-lost-context-when-engineers-join-your-team): The real onboarding tax and how to fix it.
+
+## Optional
+
+- [Privacy](/privacy): Privacy policy.
+- [Terms](/terms): Terms of service.
